@@ -1,39 +1,27 @@
 {
   "name": "autoclicker",
-  "productName": "Autoclicker",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "My autoclicker",
-  "license": "GPL-3.0",
-  "repository": "PixelSoftwareStudios/Autoclicker",
-  "author": {
-    "name": "Who wants to know?",
-    "email": "thegodpixel@protonmail.com",
-    "url": "none"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "xo",
     "start": "electron .",
-    "build": "electron-packager . --out=dist --asar --overwrite --all"
+    "build": "electron-packager . --out=dist --overwrite --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixelSoftwareStudios/autoclicker.git"
   },
   "keywords": [
-    "electron-app",
-    "electron"
+    "autoclicker"
   ],
+  "author": "Pixel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PixelSoftwareStudios/autoclicker/issues"
+  },
+  "homepage": "https://github.com/PixelSoftwareStudios/autoclicker#readme",
   "dependencies": {
-    "electron-debug": "^1.0.0",
+    "electron": "^1.7.5",
     "robotjs": "^0.4.7"
-  },
-  "devDependencies": {
-    "devtron": "^1.1.0",
-    "electron-packager": "^8.0.0",
-    "electron": "^1.3.3",
-    "xo": "^0.16.0"
-  },
-  "xo": {
-    "esnext": true,
-    "envs": [
-      "node",
-      "browser"
-    ]
   }
 }
